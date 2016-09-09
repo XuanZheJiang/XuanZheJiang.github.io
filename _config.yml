@@ -11,7 +11,7 @@ keywords: 蒋轩哲, xuanzhejiang, jiangxuanzhe
 favicon: /favicon.ico
 timezone: Asia/Beijing
 encoding: "utf-8"
-source_code: https://github.com/mzlogin/mzlogin.github.io
+source_code: https://github.com/xuanzhejiang/xuanzhejiang.github.io
 side_bar_repo_limit: 5
 
 # ---------------- #
@@ -19,7 +19,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 author: Xuanzhe Jiang
 organization: Sogou, Inc.
-organization_url: https://www.sogou.com
+organization_url: https://www.google.com
 location: Beijing, China
 email: jgcm@live.cn
 
@@ -80,7 +80,7 @@ collections:
 # ---------------- #
 #      Socials     #
 # ---------------- #
-github_username: mzlogin
+github_username: xuanzhejiang
 douban_username: freedim
 facebook_username: mzlogin
 weibo_username: mzlogin
