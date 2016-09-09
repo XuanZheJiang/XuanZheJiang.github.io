@@ -14,7 +14,7 @@
 
 ### [在线预览 &rarr;](http://mazhuang.org)
 
-![screenshot home](http://mazhuang.org/assets/images/screenshots/home.png)
+![screenshot home](https://www.baidu.com/img/bd_logo1.png)
 
 ## Fork 指南
 
