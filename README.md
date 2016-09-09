@@ -12,9 +12,9 @@
 
 ## 效果预览
 
-### [在线预览 &rarr;](http://mazhuang.org)
+### [在线预览 &rarr;](http://xuanzhejiang.github.io)
 
-![screenshot home](https://www.baidu.com/img/bd_logo1.png)
+![screenshot home](file://assets/images/screenshots/home.png)
 
 ## Fork 指南
 
