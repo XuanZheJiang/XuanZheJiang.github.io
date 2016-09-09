@@ -18,8 +18,8 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: Xuanzhe Jiang
-organization: Sogou, Inc.
-organization_url: https://www.google.com
+organization: Google, Inc.
+organization_url: https://www.google.com.hk
 location: Beijing, China
 email: jgcm@live.cn
 
@@ -80,7 +80,7 @@ collections:
 # ---------------- #
 #      Socials     #
 # ---------------- #
-github_username: xuanzhejiang
+github_username: Xuanzhe Jiang
 douban_username: freedim
 facebook_username: mzlogin
 weibo_username: mzlogin
