@@ -14,7 +14,7 @@
 
 ### [在线预览 &rarr;](http://xuanzhejiang.github.io)
 
-![screenshot home](https://github.com/xuanzhejiang/XuanZheJiang/assets/images/screenshots/home.png)
+![screenshot home](https://github.com/xuanzhejiang/XuanZheJiang.github.io/assets/images/screenshots/home.png)
 
 ## Fork 指南
 
