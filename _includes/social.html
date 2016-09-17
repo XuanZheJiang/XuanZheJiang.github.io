@@ -1,0 +1,75 @@
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  {% if site.social.github %}
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="https://github.com/{{site.social.github}}" title="@{{site.social.github}} 的 Github" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+  {% endif %}
+  
+  {% if site.social.stackoverflow %}
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="http://stackoverflow.com/users/6160787/garfieldlover" title="@{{site.social.stackoverflow}}" target="_blank">
+      <i class='social fa fa-stack-overflow'></i>
+      <span class="label">stackoverflow</span>
+    </a>
+  </li>
+  {% endif %}
+  
+  {% if site.social.twitter %}
+  <!-- Twitter -->
+  <li class="navigation__item">
+    <a href="https://twitter.com/GarfieldLover5" title="@{{site.social.twitter}}" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+  {% endif %}
+  
+  {% if site.social.weibo %}
+  <!-- Weibo -->
+  <li class="navigation__item">
+    <a href="http://weibo.com/u/5892763359" title="@{{site.social.weibo}}" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li>
+  {% endif %}
+
+  {% if site.social.douban %}
+  <!-- douban -->
+  <li class="navigation__item">
+    <a href="https://douban.com/people/144029526/" title="@{{site.social.douban}}" target="_blank">
+      <i class='social fa fa-flickr'></i>
+      <span class="label">Douban</span>
+    </a>
+  </li>
+  {% endif %}
+
+  {% if site.social.gplus %}
+  <!-- Google Plus -->
+  <li class="navigation__item">
+    <a href="https://plus.google.com/{{site.social.gplus}}" rel="author" title="Google+" target="_blank">
+      <i class='social fa fa-google-plus-square'></i>
+      <span class="label">Google Plus</span>
+    </a>
+  </li>
+  {% endif %}
+
+  {% if site.social.mail %}
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:{{site.social.mail}}" title="Contact me">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  {% endif %}
+
+  </ul>
+</nav>

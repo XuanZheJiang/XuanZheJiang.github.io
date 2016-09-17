@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="main-post-list hidden">
+
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
+      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
+      <div class="post-list__meta">
+		  <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time>
+		  
+          {% if post.category %}
+              {% for site_category in site.data.categories %}
+                  {% if site_category.slug == post.category %}
+                      {% assign category = site_category %}
+                  {% endif %}
+              {% endfor %}
+              {% if category %}
+                  {% capture category_content %} in <!-- <span class="label" style="background-color:{{ category.color }}"> --><a href="/blog/category/{{ category.slug }}/">{{ category.name }}</a><!-- </span> -->{% endcapture %}
+              {% endif %}
+          {% else %}
+              {% assign category_content = '' %}
+          {% endif %}
+		  
+           {% if post.tags.size > 0 %}
+               {% capture tags_content %} {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+               {% for post_tag in post.tags %}
+                   {% for data_tag in site.data.tags %}
+                       {% if data_tag.slug == post_tag %}
+                           {% assign tag = data_tag %}
+                       {% endif %}
+                   {% endfor %}
+                   {% if tag %}
+                       {% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+                       {% assign tags_content = tags_content_temp %}
+                   {% endif %}
+               {% endfor %}
+           {% else %}
+               {% assign tags_content = '' %}
+           {% endif %}
+		   
+           <span id="post-list__meta">{{ tags_content }}</span>
+		   <!-- fa fa-bars -->
+		   <!-- <a class="btn-border-small" href={{ tag.url }}>继续阅读</a> -->
+	   </div>
+      <hr class="post-list__divider" />
+    </li>
+    {% endfor %}
+  </ol>
+
+  {% include pagination.html %}
+
+</div>
