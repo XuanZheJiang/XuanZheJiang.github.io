@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>NSDate转时间 | Xuanzhe Jiang</title>
+    <title>调用手电筒(Swift 3) | Xuanzhe Jiang</title>
     <meta name="author" content="BieYuu" />
     <meta name="renderer" content="webkit">
     <meta name="description" content="BeiYuu's Blog" />
@@ -583,58 +583,25 @@ li.L9 {
 
   <body class="body-post">
   <div class="post-wrapper">
-    <h1 class="post-title"><a href="/NSDate%E8%BD%AC%E6%97%B6%E9%97%B4" title="NSDate转时间">NSDate转时间</a></h1>
-    <p class="post-date">2015-09-04</p>
-    <h6 id="nsdate">NSDate转时间</h6>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>+ (NSString *)dateStringFromDate:(NSDate *)date formate:(NSString *)formate;{
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:formate];
-    NSString *dateString = [formatter stringFromDate:date];
-    return dateString;
+    <h1 class="post-title"><a href="/%E8%B0%83%E7%94%A8%E6%89%8B%E7%94%B5%E7%AD%92(Swift-3)" title="调用手电筒(Swift 3)">调用手电筒(Swift 3)</a></h1>
+    <p class="post-date">2016-10-13</p>
+    <h3 id="swift-3">调用手电筒(Swift 3)</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>import AVFoundation
+var device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo);
+var isLightOn: Bool = false;
+do {
+    try device.lockForConfiguration();
+} catch {
+    print("error");
 }
-</code></pre>
-</div>
-
-<h6 id="nsdate-1">时间转成NSDate</h6>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>+ (NSDate *)dateFormDateString:(NSString *)dateString formate:(NSString *)formate{
-    NSDateFormatter *fotmatter = [[NSDateFormatter alloc] init];
-    [fotmatter setDateFormat:formate];
-    NSDate *date = [fotmatter dateFromString:dateString];
-    return date;
+if isLightOn {
+    device.torchMode = .off;
+	isLightOn = false;
+} else {
+    device.torchMode = .on;
+    isLightOn = true;
 }
-
-+ (double)timeForDate:(NSDate *)date{
-    double time = [date timeIntervalSince1970];
-    return time;
-}
-+ (NSString *)datefromTime:(long)tiem{
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:tiem];
-    return [HHTool dateStringFromDate:date formate:@"yyyyMMdd"];
-}
-</code></pre>
-</div>
-
-<h6 id="section">时间转时间戳</h6>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>+ (double)timeForDateString:(NSString *)dateString{
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyyMMdd"];
-    NSDate *date = [formatter dateFromString:dateString];
-    return [HHTool timeForDate:date];
-}
-</code></pre>
-</div>
-
-<h6 id="section-1">美国时间转成中国时间</h6>
-<hr />
-<div class="highlighter-rouge"><pre class="highlight"><code>+ (NSString *)formateString:(NSString *)dateString{
-    NSString *formate = @"E MMM d HH:mm:ss Z yyyy";
-    NSDate *date = [HHTool dateFormDateString:dateString formate:formate];
-    NSString *dateStr = [HHTool dateStringFromDate:date formate:@"MM-dd:HH:mm"];
-    return dateStr;
-}
+device.unlockForConfiguration();
 </code></pre>
 </div>
 
@@ -644,9 +611,9 @@ li.L9 {
     <script type="text/javascript" charset="utf-8">
       (function(){
         var param = {
-          url: 'http://beiyuu.com/NSDate%E8%BD%AC%E6%97%B6%E9%97%B4',
+          url: 'http://beiyuu.com/%E8%B0%83%E7%94%A8%E6%89%8B%E7%94%B5%E7%AD%92(Swift-3)',
           type: '6',
-          title: '《NSDate转时间》' + '- ',
+          title: '《调用手电筒(Swift 3)》' + '- 调用系统LED灯，需import AVFoundation。',
           ralateUid: '1855270953',
           rnd:new Date().valueOf()
         }
