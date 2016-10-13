@@ -586,22 +586,23 @@ li.L9 {
     <h1 class="post-title"><a href="/%E8%B0%83%E7%94%A8%E6%89%8B%E7%94%B5%E7%AD%92(Swift-3)" title="调用手电筒(Swift 3)">调用手电筒(Swift 3)</a></h1>
     <p class="post-date">2016-10-13</p>
     <h3 id="swift-3">调用手电筒(Swift 3)</h3>
-<div class="highlighter-rouge"><pre class="highlight"><code>import AVFoundation
-var device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo);
+<div class="highlighter-rouge"><pre class="highlight"><code>import UIKit	
+import AVFoundation
+let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo);
 var isLightOn: Bool = false;
 do {
-    try device.lockForConfiguration();
+    try device?.lockForConfiguration();
 } catch {
     print("error");
 }
 if isLightOn {
-    device.torchMode = .off;
+    device?.torchMode = .off;
 	isLightOn = false;
 } else {
-    device.torchMode = .on;
+    device?.torchMode = .on;
     isLightOn = true;
 }
-device.unlockForConfiguration();
+device?.unlockForConfiguration();
 </code></pre>
 </div>
 
