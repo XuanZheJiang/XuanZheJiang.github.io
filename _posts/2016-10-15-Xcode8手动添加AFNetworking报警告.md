@@ -8,6 +8,7 @@ category: blog
 ---
 ### Xcode8手动添加AFNetworking报警告
 ##### 警告内容:
+
 Conflicting nullability specifier on return types, 'nullable' conflicts with existing specifier 'nonnull'
 
 如图：
