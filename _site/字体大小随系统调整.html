@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>iOS之UIApplication，viewController生命流程小结 | Xuanzhe Jiang</title>
+    <title>字体大小随系统调整 | Xuanzhe Jiang</title>
     <meta name="author" content="BieYuu" />
     <meta name="renderer" content="webkit">
     <meta name="description" content="BeiYuu's Blog" />
@@ -583,19 +583,24 @@ li.L9 {
 
   <body class="body-post">
   <div class="post-wrapper">
-    <h1 class="post-title"><a href="/%E7%94%9F%E5%91%BD%E6%B5%81%E7%A8%8B%E5%B0%8F%E7%BB%93" title="iOS之UIApplication，viewController生命流程小结">iOS之UIApplication，viewController生命流程小结</a></h1>
-    <p class="post-date">2015-09-22</p>
-    <h2 id="iosuiapplicationviewcontrollerhttpwwwjianshucompa212496277f0"><a href="http://www.jianshu.com/p/a212496277f0">iOS之UIApplication，viewController生命流程小结</a></h2>
-
+    <h1 class="post-title"><a href="/%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E9%9A%8F%E7%B3%BB%E7%BB%9F%E8%B0%83%E6%95%B4" title="字体大小随系统调整">字体大小随系统调整</a></h1>
+    <p class="post-date">2016-10-30</p>
+    <h3 id="section">字体大小随系统调整</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>// 设置字体大小  
+label.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)        
+// 允许调整  
+label.adjustsFontForContentSizeCategory = true
+</code></pre>
+</div>
 
     <div id="disqus_container">
   <div class="share-con">
     <script type="text/javascript" charset="utf-8">
       (function(){
         var param = {
-          url: 'http://beiyuu.com/%E7%94%9F%E5%91%BD%E6%B5%81%E7%A8%8B%E5%B0%8F%E7%BB%93',
+          url: 'http://beiyuu.com/%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E9%9A%8F%E7%B3%BB%E7%BB%9F%E8%B0%83%E6%95%B4',
           type: '6',
-          title: '《iOS之UIApplication，viewController生命流程小结》' + '- UIApplication这里和大家分享一下UIApplication、ViewController和View的一些生命周期以及创建的知识，知识点比较散，但是掌握这些细节可以避免一些开发中的细节问题每个应用程序都有一个入口，而这个入口就是main函数',
+          title: '《字体大小随系统调整》' + '- ',
           ralateUid: '1855270953',
           rnd:new Date().valueOf()
         }
