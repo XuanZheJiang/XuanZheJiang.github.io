@@ -7,6 +7,7 @@ layout: default
     <div class="aside">
       <div class="info-card">
         <h1>Xuanzhe Jiang</h1>
+        <a href="https://github.com/XuanZheJiang" target="_blank"><img src="/images/HomePic/github192.png" alt="" width="25"/></a>
         <a href="http://weibo.com/2414696153" target="_blank"><img src="/images/HomePic/weibo192.png" alt="" width="25"/></a>
         <a href="https://twitter.com/cocoJGCM" target="_blank"><img src="/images/HomePic/twitter192.png" alt="" width="25"/></a>
         
